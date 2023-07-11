@@ -4,8 +4,5 @@
     "iconName": "octicon tools",
     "categories": [
         "Go"
-    ],
-    "filePatterns": [
-        ".*\\.go$"
     ]
 }
