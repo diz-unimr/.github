@@ -1,0 +1,8 @@
+{
+    "name": "Semantic Release Workflow",
+    "description": "Create Github releases",
+    "iconName": "octicon tag",
+    "categories": [
+        "deployment"
+    ]
+}

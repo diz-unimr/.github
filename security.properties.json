@@ -1,0 +1,8 @@
+{
+    "name": "Container Scanning Workflow",
+    "description": "Trivy docker image scanning",
+    "iconName": "octicon shield-check",
+    "categories": [
+        "testing"
+    ]
+}

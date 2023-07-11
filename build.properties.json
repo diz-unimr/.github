@@ -1,0 +1,13 @@
+{
+    "name": "Go Build Workflow",
+    "description": "Build and Test Go apps",
+    "iconName": "octicon tools",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
