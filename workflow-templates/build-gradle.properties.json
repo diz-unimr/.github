@@ -1,0 +1,8 @@
+{
+    "name": "Java Gradle Build Workflow",
+    "description": "Build and Test Java apps",
+    "iconName": "gradle",
+    "categories": [
+        "Java","Gradle"
+    ]
+}
