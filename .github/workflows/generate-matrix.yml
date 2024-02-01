@@ -1,0 +1,27 @@
+name: Generate matrix
+
+on:
+  workflow_call:
+    inputs:
+      matrix-file:
+        required: true
+        type: string
+    # Map the workflow outputs to job outputs
+    outputs:
+      matrix:
+        description: "The versions matrix"
+        value: ${{ jobs.generate-matrix.outputs.matrix }}
+
+jobs:
+  generate-matrix:
+    name: Generate matrix
+    runs-on: ubuntu-latest
+    # Map the job outputs to step outputs
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout to repository
+        uses: actions/checkout@v3
+      - name: Set matrix data
+        id: set-matrix
+        run: echo "matrix=$(jq -c . < ./${{ inputs.matrix-file }})" >> $GITHUB_OUTPUT
